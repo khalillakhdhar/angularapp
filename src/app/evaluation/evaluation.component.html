@@ -1,0 +1,7 @@
+<form >
+    <!-- évaluation d'age-->
+    <h2>évaluation d'age</h2>
+    nom: <input type="text" required name="nom" [(ngModel)]="nom" /><br />
+    age: <input type="number" min="0" name="age" [(ngModel)]="age" /><br />
+    <button type="submit" (click)="evaluer()">Ajouter</button>
+</form>

@@ -9,6 +9,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { StructuresComponent } from './structures/structures.component';
 import { OffreComponent } from './offre/offre.component';
 import { FormsModule } from '@angular/forms';
+import { EvaluationComponent } from './evaluation/evaluation.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     SecondComponent,
     NotFoundComponent,
     StructuresComponent,
-    OffreComponent
+    OffreComponent,
+    EvaluationComponent
   ],
   imports: [
     BrowserModule,

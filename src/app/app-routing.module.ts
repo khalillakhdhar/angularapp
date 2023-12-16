@@ -5,6 +5,7 @@ import { SecondComponent } from './second/second.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { StructuresComponent } from './structures/structures.component';
 import { OffreComponent } from './offre/offre.component';
+import { EvaluationComponent } from './evaluation/evaluation.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"home", pathMatch:"full"}, // redirection vers home si la route est vide (localhost:4200 => localhost:4200/home ) (best practice)
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:"second",component:SecondComponent},
   {path:"structures", component:StructuresComponent},
   {path:"offre", component:OffreComponent},
+  {path:"age", component:EvaluationComponent},
 
   { path:"**", component:NotFoundComponent} // redirection vers home si la route n'existe pas (best practice)
 

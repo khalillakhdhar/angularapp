@@ -1,0 +1,8 @@
+<h2>Liste des candidat</h2>
+<ul>
+    <li *ngFor="let candidat of candidats; let i=index">
+      {{i+1}} {{candidat}}
+    </li>
+    <div *ngIf="moyenne>10" >félicitation vous avez réuissi </div>
+    <div *ngIf="moyenne <10"> désolé bonne chance pour la prochaine fois</div>
+</ul>

@@ -1,0 +1,29 @@
+<h2>
+    ajouter une offre
+</h2>
+<form>
+    titre : <input type="text" required name="titre" [(ngModel)]="offre.titre" /><br />
+    Salaire : <input type="number" min="400" name="salaire" [(ngModel)]="offre.salaire" /><br />
+    <button type="submit" (click)="addOffre()">Ajouter</button>
+</form>
+<h2>Liste des offres</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Salaire</th>
+            <th>Remarque</th>
+        </tr>
+        <tr *ngFor="let offre of offres; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{offre.titre}}</td>
+            <td>{{offre.salaire}}</td>
+            <td>
+               <p *ngIf="offre.salaire>3000">interressant</p>
+               <p *ngIf="offre.salaire<3000">Ordinaire</p>
+            </td>
+        </tr>
+    </thead>
+</table>
+
